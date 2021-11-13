@@ -1,0 +1,62 @@
+Problema 5
+
+Se debe generar un algoritmo y miniespecificación que permita calcular y mostrar el valor total a pagar mensual de servicios básicos de una persona. Los servicios básicos son: agua, telefono. Si la persona es menor a 20 años se descuenta el 20% del total mensual. Para calcular el costo mensual a pagar el agua, se debe ingresar el número de litros de agua consumidos en el mes y el costo de cada litro de agua. Para calcular el costo del teléfono, se debe ingresar el número de minutos gastados en el mes y el costo de cada minuto.
+
+Algoritmo
+
+1.Inicio
+2.Pedir ingresar el numero de litros de agua consumido en el mes
+3.Pedir ingresar el costo de cada litro de agua
+4.Pedir ingresar el numero de minutos gastados en el mes
+5.Pedir ingresar el costo de cada minuto
+6.Pedir la edad del usuario
+7.Calcular valor a pagar de Agua
+8.Valor a pagar agua es la multiplicacion de litros consumidos por costo de cada litro
+9.Calcular valor a pagar telefono
+10.Valor a pagar telefono es la multiplicacion de minutos consumidos por costo por minuto
+11.Valor total al mes es la suma del valor total agua mas valor total telefono
+12.Si edad <=20 obtiene un descuento de 20%
+	// VT <----- 100%
+	    X <-----  20%
+13.Descuento <-- ( porcentaje*valorTotal)/100
+14.valorTotal <-- valor total - descuento 
+15. Escribir "Valor total a pagar es el resultado de lo anteriormente proppuesto"
+____________________________________________________________________________________________
+
+Miniespecificacion
+
+1.Inicio 
+2.edad, i(0,n)
+3.descuento, d(0,n)
+4.porcentaje, <----20
+5.costomensualAgua, d(0,n)
+6.numeroLitroconsumido, d(0,n)
+7.costoLitroconsumido, d(0,n)
+8.costomensualTelefono, d(0,n)
+9.numeroMinutosconsumidos, d(0,n)
+10.costoporMinuto, d(0,n)
+11.valorTotal1, d(0,n)
+12.valorTotal2, d(0,n)
+13.valorTotal3, d(0,n)
+14.Escribir "Ingrese los litros consumidos en el mes"
+15.Lea numeroLitroconsumido
+16.Escribir "Ingrese el costo de cada litro"
+17.Lea costoLitroconsumido
+18.valorTotal1 = numeroLitroconsumido * costoLitroconsumido 
+19.Escribir "Ingrese el numero de minutos consumidos en el mes"
+20.Lea numeroMinutosconsumidos
+21.Escribir "Ingrese el costo a pagar por minuto consumido"
+22.Lea costoporMinuto
+23.valorTotal2 = numeroMinutosconsumidos * costoporMinuto
+24.Escribir "Ingrese la edad del usuario"
+25.Lea edad
+26.valorTotal3 = valorTotal1 + valorTotal2 
+27.Si edad <=20
+	// valorTotal3------100%
+	        x     ------ 20% 	
+28.descuento <--- (porcentaje * descuento)/100
+29.valorTotal3 <-- (valorTota3 - descuento)
+30.Fin si
+31.Escribir "El valor total a pagar es:" +valorTotal3
+32.Fin
+
